@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-07-08T18:54:54.020913" rpa="false" schemaversion="5">
+<suite id="s1" name="Facebook Register" source="C:\Projects\Robot Automation\Issuance\practice\facebook_register.robot">
+<test id="s1-t1" name="Open Browser" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-08T18:54:54.130300" level="INFO">Opening browser 'Chrome' to base url 'https://www.facebook.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-08T18:54:54.130300" elapsed="1.705400"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-08T18:54:55.836502" elapsed="0.037690"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-08T18:54:57.876664" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-08T18:54:55.876173" elapsed="2.000491"/>
+</kw>
+<status status="PASS" start="2024-07-08T18:54:54.130300" elapsed="3.746364"/>
+</test>
+<test id="s1-t2" name="Click on Create Account Button" line="14">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-08T18:54:57.879343" level="INFO">Clicking element 'xpath://a[text()='Create new account']'.</msg>
+<arg>xpath://a[text()='Create new account']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-08T18:54:57.876664" elapsed="0.056175"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-08T18:54:59.934878" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-08T18:54:57.933842" elapsed="2.001036"/>
+</kw>
+<status status="PASS" start="2024-07-08T18:54:57.876664" elapsed="2.058214"/>
+</test>
+<test id="s1-t3" name="Input Registration Details" line="18">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-08T18:54:59.935861" level="INFO">Typing text 'email@email.com' into text field 'name=reg_email__'.</msg>
+<arg>name=reg_email__</arg>
+<arg>email@email.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-08T18:54:59.935861" elapsed="0.083027"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-08T18:55:00.019436" level="INFO">Typing text 'first name' into text field 'name=firstname'.</msg>
+<arg>name=firstname</arg>
+<arg>first name</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-08T18:55:00.019436" elapsed="0.070415"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-08T18:55:00.090843" level="INFO">Typing text 'last name' into text field 'name=lastname'.</msg>
+<arg>name=lastname</arg>
+<arg>last name</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-08T18:55:00.090843" elapsed="0.054995"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-07-08T18:55:00.145838" level="INFO">Selecting options from selection list 'birthday_day' by value 8.</msg>
+<arg>birthday_day</arg>
+<arg>8</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-07-08T18:55:00.145838" elapsed="0.026362"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-07-08T18:55:00.180121" level="INFO">Selecting options from selection list 'birthday_month' by value 8.</msg>
+<arg>birthday_month</arg>
+<arg>8</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-07-08T18:55:00.180121" elapsed="0.046464"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-07-08T18:55:00.226585" level="INFO">Selecting options from selection list 'birthday_year' by value 1981.</msg>
+<arg>birthday_year</arg>
+<arg>1981</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-07-08T18:55:00.226585" elapsed="0.047289"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-08T18:55:02.274608" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-08T18:55:00.273874" elapsed="2.000734"/>
+</kw>
+<status status="PASS" start="2024-07-08T18:54:59.935861" elapsed="2.339799"/>
+</test>
+<test id="s1-t4" name="Click Submit" line="28">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-08T18:55:02.279609" level="INFO">Clicking element 'websubmit'.</msg>
+<arg>websubmit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-08T18:55:02.278663" elapsed="0.054568"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-08T18:55:04.333540" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-08T18:55:02.333231" elapsed="2.000309"/>
+</kw>
+<status status="PASS" start="2024-07-08T18:55:02.277660" elapsed="2.055880"/>
+</test>
+<status status="PASS" start="2024-07-08T18:54:54.020913" elapsed="10.314593"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Facebook Register">Facebook Register</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
